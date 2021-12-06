@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "ado-react-native-set-version-task",
+    "name": "ReactNative pipeline set version task",
+    "version": "0.0.1",
+    "publisher": "ru-khramtsoft",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for set version for all version places in ReactNative projects.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "dist"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "set-version-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "dist"
+            }
+        }
+    ]
+}
